@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build PDF
       run:
-        docker build resume .
-        docker run resume
+        docker build --tag resume -f Dockerfile .
+        docker run --name CV resume
         mkdir CV_RESULT
         docker cp CV:main.pdf CV_RESULT/main.pdf
