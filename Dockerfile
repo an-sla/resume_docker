@@ -14,4 +14,5 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
 
 ADD . /
 RUN chmod 777 main.sh
+RUN chmod +x main.sh
 CMD ["./main.sh"]
