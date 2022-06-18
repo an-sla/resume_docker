@@ -17,3 +17,9 @@ jobs:
     - name: Build PDF
       run:
         docker build .
+    - name: running Docker
+      run:
+        docker run --name CV homework
+        mkdir CV_RESULT
+        docker cp CV:main.pdf CV_RESULT/main.pdf
+        
