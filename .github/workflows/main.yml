@@ -15,6 +15,7 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
+      - run: chmod +x main.sh
       - name: start action.yml
         uses: ./ # Uses an action in the root directory
         id: hello
