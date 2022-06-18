@@ -20,5 +20,4 @@ jobs:
     - name: running Docker
       run:
         docker run --name CV
-        docker cp CV:main.pdf CV_RESULT/main.pdf
         
