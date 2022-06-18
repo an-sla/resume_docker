@@ -1,0 +1,214 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+
+\usepackage{ragged2e}
+
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Anastasia Slabucho}
+
+% How you want it to show up on the resume
+%\newcommand{\yourWebsite}{website.com}
+% vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
+%\newcommand{\yourWebsiteLink}{https://website.com}
+\newcommand{\yourEmail}{anastasia.slabucho@gmail.com}
+\newcommand{\yourPhone}{+420 732 661 213}
+\newcommand{\githubUserName}{an-sla}
+\newcommand{\linkedInUserName}{anastasia-slabucho}
+
+% An alternate profile section 
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsiteLink}{\Large \yourName}} & 
+%     Email : \href{mailto:\yourEmail}{\yourEmail}
+%     \\
+%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
+%     Mobile : \yourPhone
+%     \\
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsiteLink}{\yourWebsite}
+%     \\
+% \end{tabular*}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$ 
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}} 
+    % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\sectionsep
+\section{Education}
+\sectionsep
+
+% Put school first and degree second if your school is reputable
+\educationHeading{Bachelor's in Computing and Data Science}{National Research University Higher School of Economics}{Moscow, RUS}{2021-2025}
+\sectionsep
+
+\textbf{4.4/5 GPA}
+\\
+{Completed an \textbf{Academic Internship} on Machine Learning and Convolutional Neural Networks} \hspace*{\fill} \location{June 2022}
+\\
+Nominated for \textbf{The Ilya Segalovich Scholarship} \hspace*{\fill} \location{2021-2022}
+\\
+\vspace{1.5mm}
+\noindent
+\justifying{\textbf{Quantitative Courses:} Calculus, Linear Algebra, Discrete Mathematics}
+\\
+\justifying{\textbf{Programming:} Algorithms and Data Structures in Python and C++, Python for Data Collection and Analysis, Software Engineering Tools}
+
+\sectionsep
+\sectionsep
+\sectionsep
+\noindent
+\educationHeading{BA English}{University College London}{London, UK}{2020-2023}
+\sectionsep
+
+\noindent
+\textbf{4.3/5 GPA}
+\\
+\textbf{Head of Department Commendation} for Tutorial and OEII course seminar work \hspace*{\fill} \location{2021-2022}
+\\
+\textbf{Head of Department Commendation} for Sessional Examinations performance \hspace*{\fill} \location{2020-2021}
+
+\sectionsep
+\sectionsep
+\sectionsep
+\noindent
+\educationHeading{\href{https://github.com/an-sla/DataSci-ML-Practicum}{Professional Certificate in Data Science \ExternalLink}
+}{Yandex Practicum}{On-line}{2021-2022}
+\sectionsep
+
+\noindent
+\justifying{\textbf{Completed 12 Jupyter-Notebook projects}
+\\ Compiled industry-level analysis, built models, proposed solutions to DS and ML problems based on real business datasets}
+
+
+\vspace{1.5mm}
+
+\noindent\justifying{\textbf{Project topics:} data preprocessing, exploratory data analysis and visualisation, statistical data analysis, supervised learning (classification and regression), numerical methods, time series, NLP}
+
+\sectionsep
+\sectionsep
+\sectionsep
+\noindent
+\educationHeading{International Baccalaureate Diploma Programme}{Nový PORG High School}{Prague, CZ}{2013-2020}
+\sectionsep
+
+\noindent
+\textbf{44/45 IBDP points, GPA 9.73/10}, ‘Pass with Distinction’\\
+\justifying{Graduation one year ahead of the general cohort based on ‘talent and excellent academic record’}
+
+\vspace{1.5mm}
+\noindent
+\justifying{\textbf{Higher Level Subjects:} Mathematics, Physics, English}
+\\
+\justifying{\textbf{Standard Level Subjects:} Economics, Czech, French}
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+%\section{Work Experience}
+%\resumeHeading{Amazon}{Software Development Engineer Intern}{Toronto, ON}{May 2020 – Aug 2020}
+%\begin{bullets}
+    %\item Designed and implemented a dashboard using \textbf{React} and \textbf{TypeScript} to visualize data stored in \textbf{DynamoDB}, decreasing time to understand delivery driver work sessions by over 10 times.
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    %\item Ensured only authorized employees have access to the application by creating an \textbf{AWS Lambda@Edge} function to intercept and sign valid requests.
+    %\item Devised and deployed the infrastructure in TypeScript through \textbf{AWS CDK}, then created efficient algorithms to process data from a custom \textbf{REST API}, so it could scale to handle millions of deliveries.
+    %\item Setup a CI/CD pipeline and exceeded requirements in each stage, which lead to the application being pushed to production.
+%\end{bullets}
+%\sectionsep
+
+%\resumeHeading{University of Windsor}{Research Assistant (RA)}{Windsor, ON}{Feb 2020 - May 2020}
+%\begin{bullets}
+    %\item Developed a Personal Health Record (PHR) system in \textbf{\href{https://spring.io/}{Spring}} based on the theoretical model outlined in \underlinedLink{https://research.library.mun.ca/11920}{Mitu Kumar's thesis}.
+    %\item Applied the \href{https://link.springer.com/chapter/10.1007/978-3-642-10838-9\_23}{mCP-ABE} encryption scheme using the \href{http://gas.dia.unisa.it/projects/jpbc/}{JPBC} library, so patients have fine-grained access control over their health records with the ability to instantly revoke access.
+%\end{bullets}
+\sectionsep
+
+%\resumeHeading{JoaTu}{Software Engineer Intern}{Montreal, QC}{Dec 2018 – May 2019}
+%\begin{bullets}
+   % \item Rewrote legacy \textbf{Django code} in \textbf{Ruby in Rails} and refactored it to make the system more extensible.
+    %\item Created \textbf{UML} diagrams and documented where features were implemented, to make the codebase more maintainable.
+%\end{bullets}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+\sectionsep
+
+\projectHeading{BMP-Image Editor }{https://github.com/an-sla/image_processor}{C++, using OOP principles}
+\vspace{1.5mm}
+\noindent
+\justifying{A command-line operated image processor for 24-bit BMPs with RGB24 pixel format. Able to apply 5 filters: crop, greyscale, negative, sharpening, edge.} \\
+\sectionsep
+
+% Example using bullets and dates 
+% \projectHeadingWithDate{Hogwart\textquotesingle{}s Library Management System}{https://github.com/Aarif123456/hogwartslibrary}{PHP, JavaScript, HTML, CSS, MySQL}{Aug 2019}
+% \begin{bullets}
+    % \item A full-stack library management system, where users can manage books and holds on their accounts. Users can search the library\textquotesingle{}s catalogue, which has every book mentioned in the Harry Potter series. The system distinguishes between 4 users. For examples, librarians who can also check or return books on behalf of users.\\
+% \end{bullets}
+% \sectionsep
+  
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\sectionsep
+
+\textbf{Programming languages:} C++, Python, PostgreSQL
+\\
+\noindent
+\justifying{\textbf{Python DS Libraries:} Numpy, Pandas, Matplotlib, Seaborn, GeoPy, Plotly~(Mapbox GL JS), Scikit-learn, TensorFlow, LightGBM, NLTK, CatBoost, PyMystem3, PyTorch~ (Torchvision)}
+\\
+\noindent
+\textbf{Technology:} Git, Docker, \LaTeX
+
+\vspace{1.5mm}
+\noindent
+\textbf{Languages:} English, Czech, Russian — native; French — B2
+
+% A more concise alternate 
+% \begin{skillList}
+%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{skillList}
+\end{document}
