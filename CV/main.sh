@@ -2,7 +2,7 @@
 ls -lah
 cd CV
 ls -lah
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
+xelatex -interaction=nonstopmode -halt-on-error main.tex
 ls -lah
 cd ..
 ls -lah
