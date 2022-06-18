@@ -17,6 +17,6 @@ jobs:
     - name: Build PDF
       run:
         docker build -t resume .
-        docker run --name CV resume
+        docker run resume
         mkdir CV_RESULT
         docker cp CV:main.pdf CV_RESULT/main.pdf
