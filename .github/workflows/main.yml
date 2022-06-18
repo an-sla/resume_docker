@@ -19,7 +19,7 @@ jobs:
         id: hello
       - run: ls -lah
       - run: git config --global user.email "anastasia.slabucho@gmail.com"
-      - run: git config --global user.name "an-sla"
+      - run: git config --global user.name "Anastasia Slabucho"
       #- run: git checkout gh-pages
       #- run: git pull origin gh-pages
       - run: git add resume.pdf
