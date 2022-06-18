@@ -28,4 +28,4 @@ jobs:
       - run: git commit -m "resume.pdf"
       #- run: git push origin HEAD:gh-pages
       - run: git push origin HEAD:gh-pages --force
-      
+    
