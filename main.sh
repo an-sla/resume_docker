@@ -10,7 +10,7 @@ ls -lah
 cd ..
 ls -lah
 echo startcopy
-cp CV/resume.pdf resume.pdf
+cp CV/main.pdf resume.pdf
 ls -lah
 
 rm main.out main.log main.aux
