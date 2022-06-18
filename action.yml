@@ -1,5 +1,5 @@
-name: 'Compile CV'
-description: 'Build image and compile CV'
+name: 'Build CV'
+description: 'Builds CV based on Dockerfile'
 runs:
   using: 'docker'
   image: 'Dockerfile'
