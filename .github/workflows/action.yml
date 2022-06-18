@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build PDF
+      run:
+        docker build -t resume .
+        docker run --name CV resume
+        mkdir CV_RESULT
+        docker cp CV:main.pdf CV_RESULT/main.pdf
