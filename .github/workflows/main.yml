@@ -19,8 +19,8 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
       - run: ls -lah
-      - run: git config --global user.email "busurmankulov.altay@mail.ru"
-      - run: git config --global user.name "Altay02"
+      - run: git config --global user.email "anastasia.slabucho@gmail.com"
+      - run: git config --global user.name "an-sla"
       #- run: git checkout gh-pages
       #- run: git pull origin gh-pages
       - run: git add resume.pdf
