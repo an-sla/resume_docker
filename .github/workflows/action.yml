@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
     - name: Build PDF
       run:
-        docker build --tag resume -f Dockerfile .
-        docker run --name CV resume
+        docker build resume .
+        docker run resume
         mkdir CV_RESULT
-        docker cp CV:main.pdf CV_RESULT/main.pdf
+        docker cp main.pdf CV_RESULT/main.pdf
