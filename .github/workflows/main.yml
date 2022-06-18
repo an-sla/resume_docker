@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches:
+      main
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: go to actions
+      uses: actions/checkout@v2
+    - name: Compile CV
+      uses: ./
+    - name: PDF work
+      run: |
+        mkdir ${{ github.workspace }}/build/
+        mv ${{ github.workspace }}/main.pdf ${{ github workspace }}/build/CV.pdf
