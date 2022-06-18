@@ -13,5 +13,4 @@ echo startcopy
 cp CV/main.pdf resume.pdf
 ls -lah
 
-rm main.out main.log main.aux
 exit
