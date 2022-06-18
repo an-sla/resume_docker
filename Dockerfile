@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
   texlive-base \
   texlive-science \
   cm-super \
+  git \
   texlive-generic-extra \
   texlive-xetex
 
