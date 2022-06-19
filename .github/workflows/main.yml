@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
   update_resume:
@@ -15,19 +15,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: start action.yml
-        uses: ./ # Uses an action in the root directory
-        id: hello
-      - run: ls -lah
+        uses: ./
+
       - run: git config --global user.email "anastasia.slabucho@gmail.com"
       - run: git config --global user.name "Anastasia Slabucho"
-      #- run: git checkout gh-pages
-      #- run: git pull origin gh-pages
+      - run: git -D gh-pages
       - run: git add resume.pdf
       - run: git status
       - run: git commit -m "resume.pdf"
-      #- run: git push origin HEAD:gh-pages
-      - run: git push origin HEAD:gh-pages --force
-      - run: git checkout origin/main
-      - run: git merge origin/gh-pages
+
+      - run: git push origin HEAD:pdf-page --force
+      - run: git rebase origin/main
       
 
