@@ -14,7 +14,7 @@
 \descript{#2}\fakeNewLine}
 
 % Create project heading. Parameters: Name, link, Tech stack
-\newcommand{\projectHeading}[4]{\Project{#1}{#2}\hspace*{\fill}  \location{#4}\\
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
 \descript{#3}\\}
 
 \newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
@@ -171,7 +171,7 @@ Nominated for \textbf{The Ilya Segalovich Scholarship} \hspace*{\fill} \location
 \section{Projects}
 \sectionsep
 
-\projectHeading{BMP-Image Editor }{https://github.com/an-sla/image_processor}{C++, using OOP principles}
+\projectHeading{BMP-Image Editor }{https://github.com/an-sla/image_processor}{\location{C++, using OOP principles}}
 \vspace{1.5mm}
 \noindent
 \justifying{A command-line operated image processor for 24-bit BMPs with RGB24 pixel format. Able to apply 5 filters: crop, greyscale, negative, sharpening, edge.} \\
