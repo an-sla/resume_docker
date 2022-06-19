@@ -24,6 +24,8 @@ jobs:
       - run: git commit -m "resume.pdf"
 
       - run: git push origin HEAD:pdf-page --force
-      - run: git rebase origin/main
+      - run: git rebase origin/main origin/pdf-page
+      - run: git checkout origin/main
+      - run: git merge origin/pdf-page
       
 
