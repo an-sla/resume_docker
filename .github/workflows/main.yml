@@ -24,9 +24,5 @@ jobs:
       - run: git commit -m "resume.pdf"
 
       - run: git push origin HEAD:main --force
-      #- run: git request-pull v1.0 https://git.ko.xz/project master
-      #- run: git rebase origin/main origin/pdf-page
-      #- run: git checkout origin/main
-      #- run: git merge origin/pdf-page
       
 
