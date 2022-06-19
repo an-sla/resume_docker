@@ -22,7 +22,6 @@ jobs:
       - run: git add resume.pdf
       - run: git status
       - run: git commit -m "resume.pdf"
-
       - run: git push origin HEAD:main --force
       
 
