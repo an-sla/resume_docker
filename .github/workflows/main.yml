@@ -23,6 +23,7 @@ jobs:
       - run: git status
       - run: git commit -m "resume.pdf"
       - run: git push origin HEAD:gh-pages --force # Committing pdf to new branch for GitHub Pages publication
+      - run: rm -v !("resume.pdf") !("index.html")
       - run: git push origin HEAD:main --force
       - run: mkdir resume_result
       - run: mv ${{ github.workspace }}/resume.pdf ${{ github.workspace }}/resume_result/resume.pdf
