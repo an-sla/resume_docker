@@ -1,5 +1,5 @@
 # Resume through Docker
-_📂 LaTeX resume built with Docker_
+_📂 LaTeX resume built with Docker and published to GitHub Pages_ 
 <br></br>
 
 by Anastasia Slabucho, HSE Computing & Data Science, Group 212, 2022
