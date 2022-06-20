@@ -22,8 +22,17 @@ jobs:
       - run: git add resume.pdf
       - run: git status
       - run: git commit -m "resume.pdf"
-      - run: git push origin HEAD:pages-branch --force # Committing pdf to new branch for GitHub Pages publication
+      - run: git push origin HEAD:gh-pages --force # Committing pdf to new branch for GitHub Pages publication
       - run: git push origin HEAD:main --force
+      
+      - name: Publish pdf
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: CV_RESULT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
       
 
