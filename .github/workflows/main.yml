@@ -26,7 +26,7 @@ jobs:
       - run: git push origin HEAD:main --force
       
       - run: mkdir resume_result
-      - run: docker cp resume.pdf resume_result/resume.pdf
+      - run: mv ${{ github.workspace }}/resume.pdf ${{ github.workspace }}/resume_result/resume.pdf
       
       - name: Publish pdf
         if: success()
