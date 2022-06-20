@@ -21,13 +21,12 @@ jobs:
       - run: git config --global user.name "Anastasia Slabucho"
       - run: git add -A
       - run: git status
-      - run: git commit -m "resume.pdf"
-      - run: git push origin HEAD:gh-pages --force # Committing pdf to new branch for GitHub Pages publication
-
-      
+      - run: git commit -m "resume.pdf and other files"
+      - run: git push origin HEAD:gh-pages --force # Committing files to new branch for GitHub Pages publication
       - run: git push origin HEAD:main --force
       - run: mkdir resume_result
       - run: mv ${{ github.workspace }}/resume.pdf ${{ github.workspace }}/resume_result/resume.pdf
+      - run: mv ${{ github.workspace }}/index.html ${{ github.workspace}}/resume_result/index.html
       
       
       - name: Publish pdf
