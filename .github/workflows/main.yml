@@ -25,12 +25,15 @@ jobs:
       - run: git push origin HEAD:gh-pages --force # Committing pdf to new branch for GitHub Pages publication
       - run: git push origin HEAD:main --force
       
+      - run: mkdir resume_result
+      - run: docker cp resume.pdf resume_result/resume.pdf
+      
       - name: Publish pdf
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: CV_RESULT
+          build_dir: resume_result
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
