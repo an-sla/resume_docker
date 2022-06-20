@@ -8,3 +8,6 @@ by Anastasia Slabucho, HSE Computing & Data Science, Group 212, 2022
 GitHub Actions workflow status:
 
 [![example workflow](https://github.com/an-sla/resume_docker/actions/workflows/main.yml/badge.svg)](https://github.com/an-sla/resume_docker/actions/workflows/main.yml?query=latest)
+
+
+[![pages-build-deployment](https://github.com/an-sla/resume_docker/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/an-sla/resume_docker/actions/workflows/pages/pages-build-deployment?query=latest)
