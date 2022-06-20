@@ -22,6 +22,7 @@ jobs:
       - run: git add resume.pdf
       - run: git status
       - run: git commit -m "resume.pdf"
+      - run: git push origin HEAD:pages-branch --force # Committing pdf to new branch for GitHub Pages publication
       - run: git push origin HEAD:main --force
     
       
