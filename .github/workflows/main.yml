@@ -19,10 +19,10 @@ jobs:
 
       - run: git config --global user.email "anastasia.slabucho@gmail.com"
       - run: git config --global user.name "Anastasia Slabucho"
-      - run: git add resume.pdf
+      - run: git add resume.pdf index.html
       - run: git status
-      - run: git commit -m "resume.pdf"
-      - run: git push origin HEAD:gh-pages --force # Committing pdf to new branch for GitHub Pages publication
+      - run: git commit -m "resume.pdf and index.html"
+      - run: git push origin HEAD:gh-pages # Committing pdf to new branch for GitHub Pages publication
       - run: git push origin HEAD:main --force
       
       - run: mkdir resume_result
