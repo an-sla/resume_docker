@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.6.19)  19 JUN 2022 11:52
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.6.20)  20 JUN 2022 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1344,18 +1344,64 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 LaTeX Font Warning: Font shape `TU/Lato-Black(0)/bx/n' undefined
 (Font)              using `TU/Lato-Black(0)/m/n' instead on input line 77.
 
-! Argument of \@vspace has an extra }.
-<inserted text> 
-                \par 
-l.175 \vspace
-             {1.5mm} 
-Here is how much of TeX's memory you used:
- 34827 strings out of 494868
- 677017 string characters out of 6175715
- 739136 words of memory out of 5000000
- 38302 multiletter control sequences out of 15000+600000
- 535115 words of font info for 93 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 62i,2n,120p,425b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-No pages of output.
+Overfull \hbox (4.77696pt too wide) in paragraph at lines 176--179
+\TU/Lato-Light(1)/m/sc/11 A command-line operated image processor for 24-bit BM
+Ps with RGB24 pixel format. Able to apply 5 filters: crop, greyscale,
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 200.
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 200.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 200.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11> on input line 200.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.69997> on input line 200.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.5> on input line 200.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 200.
+
+[1
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
+ (./main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 214.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E
+(rerunfilecheck)             After:  9F4E8B76D7677D8B49CFFC8452EBBB8F.
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
+ ) 
+Here is how much of TeX's memory you used:
+ 34863 strings out of 494868
+ 677761 string characters out of 6175715
+ 742124 words of memory out of 5000000
+ 38329 multiletter control sequences out of 15000+600000
+ 536967 words of font info for 102 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 62i,11n,120p,425b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.pdf (1 page).
